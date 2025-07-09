@@ -1,0 +1,168 @@
+
+   .carousel-inner {
+        background-color: #f0f0f0; /* กำหนดสีพื้นหลังของ Carousel (ช่องว่างรอบรูปภาพ) */
+    } 
+    
+    /* กำหนดขนาดรูปภาพใน Carousel */
+    .carousel-inner img {
+
+    width: 100%; /* ปรับให้รูปภาพยืดเต็มพื้นที่ container */
+    max-width: 1080px; /* กำหนดความกว้างสูงสุด */
+    max-height: 608px; /* กำหนดความสูงสูงสุด */
+    object-fit: contain; /* ปรับให้รูปภาพยังคงอัตราส่วนเดิม โดยไม่ครอบคลุมทั้งหมด */
+    margin: 0 auto; /* จัดให้อยู่กลาง */
+    }
+
+    .mitr{
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+/* Apply a single thick, rounded border to the table */
+    .table-bordered {
+        border: 5px solid #000; /* Thicker outer border */
+        border-radius: 15px; /* Rounded corners for the table */
+        overflow: hidden; /* Ensures the rounded corners are visible */
+        border-collapse: separate; /* Keep borders separate for the rounded effect */
+        background-color: white; /* Background color to prevent inner border artifacts */
+    }
+
+    .table-bordered thead th {
+        border-bottom: 5px solid #000; /* Thick horizontal border under the header */
+    }
+
+    /* Add a single thick vertical border between columns */
+    .table-bordered th + th,
+    .table-bordered td + td {
+        border-left: 5px solid #000; /* Thick vertical border between columns */
+    }
+
+    /* Remove all other borders from cells */
+    .table-bordered th,
+    .table-bordered td {
+        border: none; /* Remove all other cell borders */
+        vertical-align: middle; /* Center text vertically */
+        padding: 8px; /* Optional: Add padding for better spacing */
+    }
+
+
+    .datetime-container {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    }
+    .time {
+        font-size: 25px;
+        margin-top:20px;
+        font-weight: bold;
+    }
+    .date {
+        font-size: 10px;
+        margin-top:10px;
+    }
+
+    .custom-header-font-size {
+        font-size: 59px; /* เพิ่มขนาดฟอนต์ที่ต้องการ */
+    }
+
+    .custom-image-spacing {
+        margin-top: 1px;    /* ระยะห่างด้านบน */
+        margin-bottom: 5px; /* ระยะห่างด้านล่าง */
+        margin-left:30px;   /* ระยะห่างด้านซ้าย */
+        margin-right: 5px;  /* ระยะห่างด้านขวา */
+    }
+
+
+    .table-responsive {
+        overflow-x: auto; /* ทำให้ตารางเลื่อนได้ในแนวนอน */
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden; /* ปิดการเลื่อนของหน้าเว็บ */
+    } 
+
+    @media screen and (max-width: 1080px) {
+        td {
+        display: block; /* ทำให้แต่ละคอลัมน์เป็นบล็อกในหน้าจอเล็ก */
+        width: 100%; /* ใช้พื้นที่หน้าจอทั้งหมด */
+        }
+    }  
+
+    table {
+        font-family: 'Kanit', sans-serif; /* กำหนดฟอนต์สำหรับทั้งตาราง */
+        font-size: 16px; /* กำหนดขนาดฟอนต์ */
+    }
+     /* ปรับขนาดฟอนต์และจัดข้อความให้อยู่ตรงกลาง */
+    .table thead th {
+        font-size: 50px; /* ปรับขนาดฟอนต์ */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        vertical-align: middle; /* จัดข้อความให้อยู่กลางในแนวตั้ง */
+    }
+    
+    .table tbody th, .table tbody td {
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        font-size: 18px; /* ปรับขนาดฟอนต์ของข้อมูลในตาราง */
+    }
+    /* กำหนดสีพื้นหลังเฉพาะช่องที่มีข้อความ "คิวรอจัดยา" */
+               
+
+    /* กำหนดสีข้อความและจัดให้อยู่กลาง */
+    .table thead th, .table tbody th, .table tbody td {
+        text-align: center;
+        color: #ffffff; /* สีข้อความขาว */
+    }
+
+    /* กำหนดสีพื้นหลังของส่วนหัวตาราง */
+    .table thead th {
+        background-color: #6f42c1; /* สีม่วงเข้ม */
+        color: #ffffff; /* สีข้อความขาว */
+    }
+
+    #headder {
+            background-color: #e0b3ff; /* สีม่วงอ่อน */
+            color: #000000; /* สีข้อความขาว */
+        }
+     /* กำหนดสีพื้นหลังของช่องที่มี id="low" */
+      /* กำหนดสีพื้นหลังและข้อความ */
+      /* กำหนดสีพื้นหลังและข้อความ */
+    #la {
+        background-color: #6f42c1;
+        color: #ffffff;
+        font-size: 24px; /* ขนาดตัวอักษร */
+    }
+    
+    #laher {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 24px; /* ขนาดตัวอักษร */
+    }
+
+    #low {
+        background-color: #e0b0ff; /* สีม่วงอ่อน */
+        color: black;
+        font-size: 24px; /* ขนาดตัวอักษร */
+    }
+
+    /* กำหนดขนาดตัวอักษรให้ <hr> */
+    td hr {
+        border: 1px solid black;
+        margin: 5px 0;
+    }
+
+    .w-60 {
+        width: 40%;
+        height: auto; /* ทำให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
+    }
+   
+    

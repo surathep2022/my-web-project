@@ -1,0 +1,61 @@
+/* Default styles */
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Adjust styles for screens that are 768px wide and 1024px tall */
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+    header {
+        
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    /* Adjust form controls */
+    .form-control, .form-select {
+        width: 100%; /* Make inputs full width */
+        font-size: 1.2rem; /* Adjust font size */
+        margin-bottom: 10px; /* Add space between inputs */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width */
+        height: auto; /* Adjust height */
+        font-size: 1.5rem; /* Increase font size for better visibility */
+    }
+
+    /* Adjust table container */
+    .table-container {
+        display: flex; /* Use flexbox to layout tables */
+        flex-direction: column; /* Stack tables vertically */
+        gap: 20px; /* Add space between tables */
+        width: 100%; /* Make container full width */
+    }
+
+    /* Adjust table layouts */
+    table {
+        width: 100%; /* Make table full width */
+        border-collapse: collapse; /* Remove space between table cells */
+        font-size: 1rem; /* Adjust font size for tables */
+    }
+
+    .table th, .table td {
+        padding: 8px; /* Adjust padding */
+        text-align: center; /* Center-align table text */
+        border: 1px solid #dee2e6; /* Add borders for better visibility */
+    }
+
+    /* Other specific adjustments */
+    img {
+        width: 80%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Prevent overflow */
+    }
+
+    /* Additional styles for the header's form */
+    form {
+        width: 100%; /* Make form full width */
+        text-align: center; /* Center text */
+    }
+}
